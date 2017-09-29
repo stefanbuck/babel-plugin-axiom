@@ -1,0 +1,5 @@
+deploy
+node_modules
+src
+test_fixtures
+yarn-error.log

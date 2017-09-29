@@ -1,0 +1,43 @@
+{
+  "name": "babel-plugin-axiom",
+  "version": "0.0.0-development",
+  "description": "Babel Plugin for modular Axiom builds",
+  "main": "lib/babel-plugin-axiom.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrandwatchLtd/babel-plugin-axiom.git"
+  },
+  "authors": [
+    "Harry Hogg <harry@hogg.io>"
+  ],
+  "license": "MIT",
+  "homepage": "https://BrandwatchLtd.github.io/babel-plugin-axiom",
+  "bugs": {
+    "url": "https://github.com/BrandwatchLtd/babel-plugin-axiom/issues"
+  },
+  "dependencies": {
+    "babylon": "^6.18.0",
+  },
+  "peerDependencies": {
+    "bw-axiom": "^27.2.0",
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.7.0",
+    "eslint-config-axiom": "^3.0.1",
+    "eslint-plugin-react": "^7.3.0",
+    "jest": "^21.2.0"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "test": "jest ./src"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
