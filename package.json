@@ -29,10 +29,12 @@
     "eslint": "^4.7.0",
     "eslint-config-axiom": "^3.0.1",
     "eslint-plugin-react": "^7.3.0",
-    "jest": "^21.2.0"
+    "jest": "^21.2.0",
+    "semantic-release": "^8.0.3"
   },
   "scripts": {
-    "build": "rm -rf lib && babel src --out-dir lib",
+    "prepublish": "rm -rf lib && babel src --out-dir lib",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "jest ./src"
   },
   "babel": {
